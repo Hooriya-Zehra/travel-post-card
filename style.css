@@ -1,41 +1,95 @@
-body{
+body {
     background-color: bisque;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    h1,h2,h3,table{
-        text-align: center;
-    }
+    margin: 0;
+    padding: 0;
 }
-button{
+
+h1, h2, h3, table {
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgb(126, 59, 37);
+    padding: 14px 0;
+    margin-bottom: 20px;
+}
+
+.navbar a {
     background-color: rgb(119, 62, 62);
     color: antiquewhite;
-    border-radius: 10px ;
-    padding: 10px;
-
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 0 6px;
+    border-radius: 10px;
+    border: 1px solid antiquewhite;
+    font-weight: bold;
+    display: inline-block;
 }
-table,th,td{
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: antiquewhite;
+    color: rgb(119, 62, 62);
+    border: 1px solid rgb(119, 62, 62);
+}
+
+/* Buttons */
+button {
+    background-color: rgb(119, 62, 62);
+    color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    padding: 10px 14px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(126, 59, 37);
+}
+
+/* Tables */
+table, th, td {
     border: 1px solid rgb(126, 59, 37);
     border-collapse: collapse;
-    padding: 8px;
+    padding: 8px 14px;
+}
 
-}
-.image-gallery{
-    display:flex;
-    justify-content: center;
-}
-.image-card img{
-    width:250px;
-    height:180px;
-    object-fit:cover;
-    border-radius: 8px;
-}
-.image-card{
-    margin-top: 8px;
-    font-weight: bold;
-
-
-}
-table{
+table {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.image-card {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.image-card img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid rgb(126, 59, 37);
+}
+
+/* Footer */
+footer {
+    background-color: rgb(126, 59, 37);
+    color: antiquewhite;
+    padding: 12px 0;
+    margin-top: 40px;
+    font-size: 0.95em;
 }
